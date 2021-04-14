@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FoodParcelsApp</string>
+    <string name="title_activity_image_display">ImageDisplayActivity</string>
+    <string name="title">Favourite Foods</string>
+    <string name="appleDesc">Apple: \nApples are red.</string>
+    <string name="bananaDesc">Banana: \nBananas are yellow.</string>
+    <string name="orangeDesc">Orange: \nOranges are orange.</string>
+    <string name="pearDesc">Pear: \nPears are green.</string>
+</resources>

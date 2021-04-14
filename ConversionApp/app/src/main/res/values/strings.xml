@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ConversionApp</string>
+    <string name="header">Imperial > Metric Converter</string>
+    <string name="mile_fill">Miles</string>
+    <string name="feet_fill">Feet</string>
+    <string name="inch_fill">Inches</string>
+    <string name="checkbox">Display Meters</string>
+    <string name="convert_but">Convert!</string>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ConversioneApp</string>
+    <string name="header">Imperiale > Metrica Convertitore</string>
+    <string name="mile_fill">Migli</string>
+    <string name="feet_fill">Piedi</string>
+    <string name="inch_fill">Pollici</string>
+    <string name="checkbox">Display Metri</string>
+    <string name="convert_but">Convertire!</string>
+</resources>

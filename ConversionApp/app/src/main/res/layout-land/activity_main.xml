@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="15dp"
+        android:autoText="false"
+        android:text="@string/header"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/MilesInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:hint="@string/mile_fill"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/FeetInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Header" />
+
+    <EditText
+        android:id="@+id/FeetInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:hint="@string/feet_fill"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/InchesInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MilesInput" />
+
+    <EditText
+        android:id="@+id/InchesInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:hint="@string/inch_fill"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FeetInput" />
+
+    <CheckBox
+        android:id="@+id/MeterCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/checkbox"
+        app:layout_constraintBottom_toTopOf="@+id/ConvertBut"
+        app:layout_constraintEnd_toEndOf="@+id/ConvertBut"
+        app:layout_constraintStart_toStartOf="@+id/ConvertBut"
+        app:layout_constraintTop_toBottomOf="@+id/Header" />
+
+    <Button
+        android:id="@+id/ConvertBut"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/convert_but"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/CmOutput"
+        app:layout_constraintEnd_toEndOf="@+id/CmOutput"
+        app:layout_constraintStart_toStartOf="@+id/CmOutput"
+        app:layout_constraintTop_toBottomOf="@+id/MeterCheck" />
+
+    <TextView
+        android:id="@+id/CmOutput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="8dp"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/MOutput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/MilesInput"
+        app:layout_constraintTop_toBottomOf="@+id/ConvertBut" />
+
+    <TextView
+        android:id="@+id/MOutput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/CmOutput"
+        app:layout_constraintStart_toStartOf="@+id/CmOutput"
+        app:layout_constraintTop_toBottomOf="@+id/CmOutput" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
